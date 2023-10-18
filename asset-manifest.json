@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-3d-graph-landing-page/static/css/main.eefc237f.css",
-    "main.js": "/react-3d-graph-landing-page/static/js/main.a466db71.js",
+    "main.js": "/react-3d-graph-landing-page/static/js/main.79b9da1a.js",
     "static/media/paion-logo-white.svg": "/react-3d-graph-landing-page/static/media/paion-logo-white.47cfc925f14e2fa42e3f36f0de6ae403.svg",
     "index.html": "/react-3d-graph-landing-page/index.html",
     "main.eefc237f.css.map": "/react-3d-graph-landing-page/static/css/main.eefc237f.css.map",
-    "main.a466db71.js.map": "/react-3d-graph-landing-page/static/js/main.a466db71.js.map"
+    "main.79b9da1a.js.map": "/react-3d-graph-landing-page/static/js/main.79b9da1a.js.map"
   },
   "entrypoints": [
     "static/css/main.eefc237f.css",
-    "static/js/main.a466db71.js"
+    "static/js/main.79b9da1a.js"
   ]
 }
