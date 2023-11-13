@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.241951ba.css",
-    "main.js": "/static/js/main.89e893b6.js",
+    "main.js": "/static/js/main.a76cc427.js",
     "static/media/paion-logo-white.svg": "/static/media/paion-logo-white.47cfc925f14e2fa42e3f36f0de6ae403.svg",
     "index.html": "/index.html",
     "main.241951ba.css.map": "/static/css/main.241951ba.css.map",
-    "main.89e893b6.js.map": "/static/js/main.89e893b6.js.map"
+    "main.a76cc427.js.map": "/static/js/main.a76cc427.js.map"
   },
   "entrypoints": [
     "static/css/main.241951ba.css",
-    "static/js/main.89e893b6.js"
+    "static/js/main.a76cc427.js"
   ]
 }
