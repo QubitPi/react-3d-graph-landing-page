@@ -43,8 +43,12 @@ function App() {
           Paion Data
         </div>
         <div className="p-2 ms-auto text-white">
-          <a href="https://github.com/QubitPi/react-3d-graph-landing-page" style={{color: '#ffffff'}}>
-            <BsGithub size={30} />
+          <a href="https://github.com/QubitPi/react-3d-graph-landing-page" style={{ color: '#ffffff' }}>
+            <BsGithub
+              size={30}
+              onMouseOver={({ target }) => target.style.color = '#0C6EFD'}
+              onMouseOut={({ target }) => target.style.color = '#ffffff'}
+            />
           </a>
         </div>
         <Button variant="outline-light" className="p-2" href="https://app.nexusgraph.com">Start Free</Button>
