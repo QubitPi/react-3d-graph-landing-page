@@ -9,6 +9,10 @@ import Stack from 'react-bootstrap/Stack';
 import paionLogoWhite from './paion-logo-white.svg'
 import { BsGithub } from "react-icons/bs";
 
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+
 // https://stackoverflow.com/a/38463360
 const BackgroundGraph = styled.section`
 width: 100vw;
@@ -36,12 +40,56 @@ function App() {
 
   return (
     <>
+      <style type="text/css">
+        {`
+          .dropdown>a::after {
+            color: white;
+          }
+          .dropdown-menu {
+            background-color: transparent;
+            .dropdown-item:hover {
+              text-decoration: underline;
+              color: #fff;
+              background-color: transparent;
+            }
+          }
+        `}
+      </style>
+
       {/* https://stackoverflow.com/a/69321054 */}
-      <Stack direction="horizontal" gap={3} className='mt-5 mx-5'>
+      <Stack direction="horizontal" gap={5} className='mt-5 mx-5'>
         <div className="p-2 text-white">
           <img src={paionLogoWhite} alt='paion logo' />
           Paion Data
         </div>
+
+        <Nav className="justify-content-center">
+          <NavDropdown title={
+            <span style={{ color: 'white' }}>API</span>
+          } id="basic-nav-dropdown">
+            <NavDropdown.Item href="https://rapidapi.com/paion-data-machine-learning/api/theresa3">
+              <span style={{ color: 'white' }}>RapidAPI</span>
+            </NavDropdown.Item>
+            <NavDropdown.Item href="https://huggingface.co/paion-data">
+              <span style={{ color: 'white' }}>Hugging Face</span>
+            </NavDropdown.Item>
+          </NavDropdown>
+          <NavDropdown title={
+            <span style={{ color: 'white' }}>Company</span>
+          } id="basic-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">
+              <span style={{ color: 'white' }}>About Us</span>
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">
+              <span style={{ color: 'white' }}>Careers</span>
+            </NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action/3.4">
+              <span style={{ color: 'white' }}>Social</span>
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+
         <div className="p-2 ms-auto text-white">
           <a href="https://github.com/QubitPi/react-3d-graph-landing-page" style={{ color: '#ffffff' }}>
             <BsGithub
