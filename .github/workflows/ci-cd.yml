@@ -10,22 +10,20 @@ name: CI/CD
 env:
   USER: QubitPi
   EMAIL: jack20220723@gmail.com
+  NODE_VERSION: 18
 
 jobs:
   ci-cd:
     name: CI/CD
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node_version: [16]
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Set node version to ${{ matrix.node_version }}
+      - name: Set node version to ${{ env.node_version }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node_version }}
+          node-version: ${{ env.node_version }}
       - name: Install dependencies
         run: yarn
       - name: Production build
