@@ -1,4 +1,6 @@
-# Product Landing Page with 3D Knowledge Graph Theme <sup>![node version][node version badge]</sup>
+# Product Landing Page with 3D Knowledge Graph Theme
+
+![node version][node version badge]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
